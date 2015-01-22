@@ -75,14 +75,6 @@ rover2 = Rover.new(position2_array[0].to_i, position2_array[1].to_i, position2_a
 rover2.read_instructions(read_instructions2_array)
 rover2.to_s
 
-	def move
-		if @d == "N" then @y += 1
-		elsif @d == "S" then @y -= 1
-		elsif @d == "E" then @x += 1
-		elsif @d == "W" then @x -= 1
-	end
-	end
-
 
 
 
