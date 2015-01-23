@@ -10,22 +10,48 @@ user_name = user_array[1]
 
 
 class Reader
-	attr_accessor :price
+	attr_accessor :price, :name, :quantity
 
-def Initialize (quantity, name, price)
+def Initialize (item)
 	@price = price
 	@quantity = quantity
 	@name = name
+	@tax = 0
+	@tax_type = tax_type
+end 
 
-user_array.each do |x|
-	if x == "chocolate" || x == "pills" || x == "book" && x == "imported"
-		price = price * 1.15
-	elsif x == "chocolate" || x == "pills" || x == "book"
-		price = price * 1.00
+def calculate_tax
+	if @name == 
+
+
+ 
+user_price = user_array[-1].to_f
+user_quantity = user_array[0].to_i
+user_name = user_array[1] 
+
+
+def read
+	if @name == "chocolate" || @name == "pills" || @name == "book" && @name == "imported"
+		 @price = @price * 1.05
+	elsif @name == "chocolate" || @name == "pills" || @name == "book"
+		@price = @price * 1.00
 	else
-		price == price * 1.10
+		@price == @price * 1.10
 	end
 end
 
 
 end
+
+class Item
+
+def Initialize (quantity, name, price)
+	@quantity = quantity
+	@name = name
+	@price = price
+end
+
+end
+
+
+item1 = Item.new(user_array[0].to_i, user_array[1], user_array[-1])

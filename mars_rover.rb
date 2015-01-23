@@ -50,28 +50,19 @@ puts "Where is the first rover?"
 position1 = gets.chomp
 puts "What do you want the first rover to do?"
 read_instructions1 = gets.chomp
-
 position1_array = position1.split(" ")
-
 read_instructions1_array = read_instructions1.split("")
-
-
 rover1 = Rover.new(position1_array[0].to_i, position1_array[1].to_i, position1_array[2])
-
 rover1.read_instructions(read_instructions1_array)
 rover1.to_s
-
 
 puts "Where is the second rover?"
 position2 = gets.chomp
 puts "What do you want the second rover to do?"
 read_instructions2 = gets.chomp
-
 position2_array = position2.split(" ")
 read_instructions2_array = read_instructions2.split("")
-
 rover2 = Rover.new(position2_array[0].to_i, position2_array[1].to_i, position2_array[2])
-
 rover2.read_instructions(read_instructions2_array)
 rover2.to_s
 
